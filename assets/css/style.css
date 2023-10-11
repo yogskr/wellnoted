@@ -693,7 +693,8 @@ footer p,
 
   .nav-container,
   .hero-container,
-  .feature-container {
+  .feature-section,
+  footer {
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -754,7 +755,9 @@ footer p,
 
   .nav-container,
   .hero-container,
-  .feature-container {
+  .feature-section,
+  .contact-container,
+  footer {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -822,12 +825,11 @@ footer p,
     row-gap: 7rem;
   }
 
-  .contact-section {
-    margin-top: 7rem;
-  }
-
   .contact-container {
-    padding: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   .email-newsletter {
