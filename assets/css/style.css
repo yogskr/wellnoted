@@ -75,6 +75,17 @@ button {
   outline: none;
 }
 
+#wellnoted-text {
+  font-weight: bold;
+  background-color: #f3c455;
+  border-radius: 4px;
+  padding: 0.2rem;
+}
+
+.dark-theme #wellnoted-text {
+  color: var(--dark-color);
+}
+
 /* Theme Color Change */
 body.dark-theme {
   --light-color: #f9f7f7;
@@ -227,7 +238,8 @@ body.dark-theme {
 /* Hero Section */
 .hero-container {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
   padding: 10rem 10rem;
   min-height: 100vh;
 }
@@ -655,6 +667,11 @@ footer p,
     font-size: var(--font-size-sm);
   }
 
+  .hero-img,
+  .hero-img-dark {
+    width: 55rem;
+  }
+
   .notes-btn,
   .to-do-btn {
     font-size: var(--font-size-sm);
@@ -741,8 +758,8 @@ footer p,
   }
 
   .hero-container {
-    row-gap: 0;
-    padding-bottom: 7rem;
+    row-gap: 5rem;
+    min-height: max-content;
   }
 
   .hero-img,
