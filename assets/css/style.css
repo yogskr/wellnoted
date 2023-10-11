@@ -1,6 +1,5 @@
 /* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
 
 /* Custom Properties */
@@ -241,7 +240,6 @@ body.dark-theme {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
   padding: 10rem 10rem;
-  min-height: 100vh;
 }
 
 .section-header-offset {
@@ -742,15 +740,17 @@ footer p,
 
 @media only screen and (max-width: 432px) {
   .logo {
-    font-size: var(--font-size-sm);
+    font-size: 2rem;
   }
 
-  .list-items {
-    font-size: var(--font-size-sm);
+  .list-items,
+  .moon-icon,
+  .sun-icon {
+    font-size: 1.8rem;
   }
 
   .menu-bar-items {
-    font-size: var(--font-size-xsm);
+    font-size: 1.5rem;
   }
 
   .nav-container,
