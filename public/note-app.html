@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wellnoted</title>
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../assets/css/app.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <!-- Navigation Bar -->
+      <nav class="nav-container" id="top-navbar">
+        <a href="../index.html">
+          <p class="logo">wellnoted</p>
+        </a>
+        <ul class="nav-start">
+          <li class="list-items">
+            <a href="./note-app.html">Notes</a>
+          </li>
+          <li class="list-items">
+            <a href="#">To-Do List</a>
+          </li>
+          <li class="list-items">
+            <a href="#">About</a>
+          </li>
+        </ul>
+
+        <div class="nav-end">
+          <form class="search place-items-center" role="search">
+            <i class="ri-search-line search-icon" id="search-btn"></i>
+            <input
+              type="search"
+              name="search"
+              placeholder="Search"
+              class="search-box"
+            />
+          </form>
+          <a href="https://github.com/yogskr" class="place-items-center">
+            <i class="ri-account-circle-line profile-icon list-items"></i>
+          </a>
+          <button class="theme-btn place-items-center" id="theme-toggle-btn">
+            <i class="ri-sun-line sun-icon list-items"></i>
+            <i class="ri-moon-line moon-icon list-items"></i>
+          </button>
+          <button class="hamburger-btn menu-toggle-icon place-items-center">
+            <i
+              class="ri-menu-line open-menu-icon list-items"
+              id="hamburger-btn"
+            ></i>
+            <i
+              class="ri-close-line close-menu-icon list-items"
+              id="close-btn"
+            ></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <section class="menu-show hidden">
+      <ul class="menu-bar">
+        <li class="menu-bar-items">
+          <form class="hidden" id="search" role="search">
+            <input
+              id="search-input"
+              type="search"
+              name="search"
+              placeholder="Search your note..."
+            />
+          </form>
+        </li>
+        <li class="menu-bar-items">
+          <a href="#">My Notes</a>
+        </li>
+        <li class="menu-bar-items">
+          <a href="#">To-Do List</a>
+        </li>
+        <li class="menu-bar-items">
+          <a href="#">About</a>
+        </li>
+      </ul>
+    </section>
+    <!-- Custom Scripts -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

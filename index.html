@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wellnoted</title>
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <!-- Navigation Bar -->
+      <nav class="nav-container" id="top-navbar">
+        <div class="logo-container">
+          <p class="logo">well<span class="highlight">noted</span>.</p>
+        </div>
+
+        <ul class="nav-start">
+          <li class="list-items">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="list-items">
+            <a href="#notes-features">Features</a>
+          </li>
+          <li class="list-items">
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+
+        <div class="right-nav-container">
+          <button class="theme-btn place-items-center" id="theme-toggle-btn">
+            <i class="ri-sun-line sun-icon"></i>
+            <i class="ri-moon-line moon-icon"></i>
+          </button>
+          <ul class="nav-end">
+            <li class="list-items">
+              <a href="#">Sign In</a>
+            </li>
+            <li class="list-items" id="sign-up">
+              <a href="#">Sign Up</a>
+            </li>
+          </ul>
+          <button class="hamburger-btn menu-toggle-icon place-items-center">
+            <i
+              class="ri-menu-line open-menu-icon list-items hidden"
+              id="hamburger-btn"
+            ></i>
+            <i
+              class="ri-close-line close-menu-icon list-items hidden"
+              id="close-btn"
+            ></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Dropdown Menu -->
+    <section class="menu-show dropdown-animated hidden">
+      <ul class="menu-bar">
+        <li class="menu-bar-items">
+          <a href="#">Home</a>
+        </li>
+        <li class="menu-bar-items">
+          <a href="#">Features</a>
+        </li>
+        <li class="menu-bar-items">
+          <a href="#">About Us</a>
+        </li>
+        <li class="menu-bar-items sign-in-btn">
+          <a href="#">Sign In</a>
+        </li>
+        <li class="menu-bar-items sign-up-btn">
+          <a href="#">Sign Up</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-container section-header-offset" id="hero">
+      <img src="./assets/images/hero-image-light.svg" class="hero-img" />
+      <img src="./assets/images/hero-image-dark.svg" class="hero-img-dark" />
+      <div class="hero-section">
+        <section class="hero-text">
+          <h1>Take notes anytime. Get things done in time.</h1>
+          <p>
+            Unleash your productivity with our intuitive note-taking and to-do
+            apps. Effortlessly capture, organize, and access your ideas from
+            anywhere.
+          </p>
+        </section>
+        <div class="hero-btn">
+          <button class="notes-btn">
+            <span>Notes</span>
+          </button>
+          <button class="to-do-btn">
+            <span>To Dos</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="feature-section" id="wellnoted-features">
+      <!-- Notes Features -->
+      <div class="feature-container notes-container" id="notes-features">
+        <div class="feature-text" id="notes-text">
+          <h2>Notes Features</h2>
+          <p>
+            Wellnoted lets you create notes hassle-free. Our Notes is designed
+            to enhance your productivity and creativity.
+          </p>
+          <img
+            src="./assets/images/notes/notes-light.svg"
+            class="notes-light"
+          />
+          <img src="./assets/images/notes/notes-dark.svg" class="notes-dark" />
+        </div>
+        <div class="feature-item-container">
+          <div class="feature-item">
+            <img src="./assets/images/notes/feature1.svg" class="item-icon" />
+            <img
+              src="./assets/images/notes/feature1-dark.svg"
+              class="item-icon-dark"
+            />
+            <div class="item-container">
+              <h3>Intuitive Interface</h3>
+              <p>
+                Jot everything down in one click. Our minimalist design ensures
+                distraction-free note-taking.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <img src="./assets/images/notes/feature2.svg" class="item-icon" />
+            <img
+              src="./assets/images/notes/feature2-dark.svg"
+              class="item-icon-dark"
+            />
+            <div class="item-container">
+              <h3>Smart Search</h3>
+              <p>
+                Find any note instantly with our lightning-fast search feature.
+                Say goodbye to endless scrolling.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <img src="./assets/images/notes/feature3.svg" class="item-icon" />
+            <img
+              src="./assets/images/notes/feature3-dark.svg"
+              class="item-icon-dark"
+            />
+            <div class="item-container">
+              <h3>Easy Organization</h3>
+              <p>
+                Add tags to help organize and categorize your notes. No more
+                hussle in finding notes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- To-Dos Features -->
+      <div class="feature-container todos-container" id="todos-features">
+        <div class="feature-text" id="notes-text">
+          <h2>To Dos Features</h2>
+          <p>
+            Need to plan your day? Wellnoted provides an interactive to-do list
+            app. Our To Dos is ready to make you more productive.
+          </p>
+          <img
+            src="./assets/images/todos/todos-light.svg"
+            class="todos-light"
+          />
+          <img src="./assets/images/todos/todos-dark.svg" class="todos-dark" />
+        </div>
+        <div class="feature-item-container">
+          <div class="feature-item">
+            <img src="./assets/images/todos/feature1.svg" class="item-icon" />
+            <img
+              src="./assets/images/todos/feature1-dark.svg"
+              class="item-icon-dark"
+            />
+            <div class="item-container">
+              <h3>Task Creation</h3>
+              <p>
+                Easily add and organize tasks with a user-friendly interface
+                that makes capturing your to-dos a breeze.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <img src="./assets/images/todos/feature2.svg" class="item-icon" />
+            <img
+              src="./assets/images/todos/feature2-dark.svg"
+              class="item-icon-dark"
+            />
+            <div class="item-container">
+              <h3>Priority Setting</h3>
+              <p>
+                Mark tasks as high, medium, or low priority and stay on top of
+                your responsibilities.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <img src="./assets/images/todos/feature3.svg" class="item-icon" />
+            <img
+              src="./assets/images/todos/feature3-dark.svg"
+              class="item-icon-dark"
+            />
+            <div class="item-container">
+              <h3>Task Attachments</h3>
+              <p>
+                Enhance your tasks with attachments such as images, documents,
+                or links.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <form class="contact-section contact-container" id="cta">
+      <div class="contact-text">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>
+          Stay up-to-date to the latest updates and news. Thanks for
+          subscribing!
+        </p>
+      </div>
+      <div class="contact-input-box">
+        <input
+          type="email"
+          name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          placeholder="Email Address"
+          class="email-newsletter"
+        />
+        <button class="newsletter-btn">Subscribe</button>
+      </div>
+    </form>
+    <!-- Footer -->
+    <footer>
+      <div class="logo-container">
+        <p class="logo">well<span class="highlight">noted</span>.</p>
+      </div>
+      <p>
+        &copy 2023 Made with <i class="ri-heart-2-fill heart-icon"></i> in
+        Yogyakarta
+      </p>
+      <div class="social-icons">
+        <a
+          href="http://linkedin.com/in/yogakrisanta"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ri-linkedin-box-fill linkedin"></i>
+        </a>
+        <a
+          href="http://github.com/yogskr/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ri-github-fill github"></i>
+        </a>
+        <a
+          href="http://instagram.com/yogskr/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ri-instagram-line instagram"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- Custom Scripts -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
