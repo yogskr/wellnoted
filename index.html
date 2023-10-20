@@ -13,9 +13,8 @@
       <div class="container">
         <div class="flex justify-between px-10 py-5 lg:px-16">
           <div class="self-center">
-            <h2 class="font-semibold text-xl text-secondary md:text-2xl">
-              well<span
-                class="font-semibold text-white bg-primary p-0.5 rounded-md"
+            <h2 class="font-bold text-xl text-secondary md:text-2xl">
+              well<span class="font-bold text-white bg-primary p-0.5 rounded-md"
                 >noted</span
               >.
             </h2>
@@ -44,7 +43,7 @@
             </button>
             <nav
               id="nav-menu"
-              class="hidden w-full px-10 py-5 bg-white lg:block lg:shadow-none lg:static lg:bg-transparent lg:max-w-full"
+              class="hidden w-full px-10 bg-white lg:block lg:shadow-none lg:static lg:max-w-full"
             >
               <ul
                 class="flex flex-col items-center gap-5 lg:flex-row lg:gap-10"
@@ -60,14 +59,14 @@
                   <a
                     href="#"
                     class="text-base font-semibold text-secondary hover:text-primary"
-                    >Features</a
+                    >About</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#"
                     class="text-base font-semibold text-secondary hover:text-primary"
-                    >Technologies</a
+                    >Features</a
                   >
                 </li>
                 <li class="group">
@@ -77,24 +76,34 @@
                     >Contact</a
                   >
                 </li>
-                <li class="group">
-                  <a
-                    href="#"
-                    class="text-base font-semibold text-secondary hover:text-primary"
-                    >About</a
+                <li
+                  class="group hidden md:block md:bg-primary p-2 rounded-sm hover:bg-teal-700 hover:shadow-md"
+                >
+                  <a href="#" class="text-base font-semibold text-white"
+                    >Log In</a
                   >
                 </li>
               </ul>
             </nav>
           </div>
         </div>
-        <div id="dropdown-menu" class="hidden w-full px-10 py-5 bg-white">
+        <div
+          id="dropdown-menu"
+          class="hidden w-full px-10 py-5 bg-white border-t border-t-slate-200 shadow-md"
+        >
           <ul class="flex flex-col items-center gap-5 lg:flex-row lg:gap-10">
             <li class="group">
               <a
                 href="#"
-                class="text-base font-semibold text-secondary hover:text-primary mx-"
+                class="text-base font-semibold text-secondary hover:text-primary"
                 >Home</a
+              >
+            </li>
+            <li class="group">
+              <a
+                href="#"
+                class="text-base font-semibold text-secondary hover:text-primary"
+                >About</a
               >
             </li>
             <li class="group">
@@ -108,21 +117,7 @@
               <a
                 href="#"
                 class="text-base font-semibold text-secondary hover:text-primary"
-                >Technologies</a
-              >
-            </li>
-            <li class="group">
-              <a
-                href="#"
-                class="text-base font-semibold text-secondary hover:text-primary"
                 >Contact</a
-              >
-            </li>
-            <li class="group">
-              <a
-                href="#"
-                class="text-base font-semibold text-secondary hover:text-primary"
-                >About</a
               >
             </li>
           </ul>
@@ -132,10 +127,12 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="mt-36">
+    <section id="home" class="pt-36">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center mb-8 px-10 lg:pr-0 lg:pl-16 lg:w-1/2">
+          <div
+            class="w-full self-center mb-8 px-10 lg:mb-20 lg:pr-0 lg:pl-16 lg:w-1/2"
+          >
             <svg
               class="w-11/12 mx-auto"
               id="freepik_stories-novelist-writing"
@@ -2127,16 +2124,21 @@
             </svg>
           </div>
           <div
-            class="w-full self-center mb-8 px-10 lg:pl-10 lg:pr-28 lg:w-1/2 xl:pl-28"
+            class="w-full self-center mb-20 px-10 lg:pl-10 lg:pr-36 lg:w-1/2 xl:pl-28"
           >
             <form id="registration-form" class="flex flex-col mb-8">
               <div class="mb-5">
-                <h1 class="font-semibold text-xl text-secondary md:text-4xl">
+                <h1 class="font-semibold text-2xl text-secondary md:text-4xl">
                   What are you waiting for? Join the force today!
                 </h1>
               </div>
               <div class="email-section mb-6">
-                <label for="email" class="text-base text-tetiary">Email</label>
+                <div class="mb-2">
+                  <label for="email" class="text-base font-medium text-tetiary"
+                    >Email</label
+                  >
+                </div>
+
                 <input
                   type="email"
                   for="email"
@@ -2146,9 +2148,13 @@
                 />
               </div>
               <div class="password-section mb-6">
-                <label for="password" class="text-base text-tetiary"
-                  >Password</label
-                >
+                <div class="mb-2">
+                  <label
+                    for="password"
+                    class="text-base font-medium text-tetiary"
+                    >Password</label
+                  >
+                </div>
                 <input
                   type="text"
                   for="password"
@@ -2320,10 +2326,21 @@
     <!-- Hero Section End -->
 
     <!-- Features Section Start -->
-    <section id="features">
+    <section id="features" class="pt-36 pb-16 bg-slate-100">
       <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full"></div>
+        <div class="block">
+          <div class="w-full px-10">
+            <h4 class="text-lg text-center font-semibold text-primary mb-3">
+              Features
+            </h4>
+            <h2 class="text-3xl text-center font-semibold text-secondary mb-3">
+              What Is wellnoted?
+            </h2>
+            <p class="text-base text-center text-tetiary">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
+              sequi?
+            </p>
+          </div>
         </div>
       </div>
     </section>
