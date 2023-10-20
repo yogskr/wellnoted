@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +9,9 @@
   </head>
   <body class="font-poppins">
     <!-- Header Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full z-10">
+    <header class="fixed top-0 left-0 w-full">
       <div class="container">
-        <div class="flex justify-between px-10 py-5 lg:px-16">
+        <div class="flex justify-between bg-white px-10 py-5 lg:px-16">
           <div class="self-center">
             <h2 class="font-bold text-xl text-secondary md:text-2xl">
               well<span class="font-bold text-white bg-primary p-0.5 rounded-md"
@@ -20,34 +20,80 @@
             </h2>
           </div>
           <div class="flex items-center gap-5">
-            <a href="#">
-              <p class="text-base font-semibold text-secondary lg:hidden">
+            <a href="#" class="w-full">
+              <p
+                class="text-base font-semibold text-secondary hover:text-primary lg:hidden"
+              >
                 Log In
               </p>
             </a>
-            <button
-              id="hamburger"
+            <input
+              type="checkbox"
               name="hamburger"
-              type="button"
-              class="block lg:hidden"
+              id="hamburger"
+              class="peer"
+              hidden
+            />
+            <label
+              for="hamburger"
+              class="flex flex-col gap-1 peer-checked:hamburger cursor-pointer lg:hidden"
             >
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
-              ></span>
-            </button>
-            <nav
-              id="nav-menu"
-              class="hidden w-full px-10 bg-white lg:block lg:shadow-none lg:static lg:max-w-full"
+              <div
+                aria-hidden="true"
+                class="m-auto h-0.5 w-6 bg-secondary duration-300"
+              ></div>
+              <div
+                aria-hidden="true"
+                class="m-auto h-0.5 w-6 bg-secondary duration-300"
+              ></div>
+              <div
+                aria-hidden="true"
+                class="m-auto h-0.5 w-6 bg-secondary duration-300"
+              ></div>
+            </label>
+            <div
+              id="dropdown-menu"
+              class="peer-checked:translate-y-[4.2rem] translate-y-[-110%] fixed inset-0 bottom-[75%] p-10 bg-slate-50 border-t border-t-slate-300 shadow-md transition duration-500 ease-in-out -z-10"
             >
               <ul
                 class="flex flex-col items-center gap-5 lg:flex-row lg:gap-10"
               >
+                <li class="group">
+                  <a
+                    href="#"
+                    class="text-base font-semibold text-secondary hover:text-primary"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="text-base font-semibold text-secondary hover:text-primary"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="text-base font-semibold text-secondary hover:text-primary"
+                    >Features</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="text-base font-semibold text-secondary hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Hamburger Button End -->
+            <nav
+              id="nav-menu"
+              class="hidden w-full px-10 md:px-0 lg:block lg:shadow-none"
+            >
+              <ul class="flex items-center justify-center gap-10">
                 <li class="group">
                   <a
                     href="#"
@@ -76,51 +122,16 @@
                     >Contact</a
                   >
                 </li>
-                <li
-                  class="group hidden md:block md:bg-primary p-2 rounded-sm hover:bg-teal-700 hover:shadow-md"
-                >
-                  <a href="#" class="text-base font-semibold text-white"
+                <li class="group w-12">
+                  <a
+                    href="#"
+                    class="text-base font-semibold text-secondary hover:text-primary"
                     >Log In</a
                   >
                 </li>
               </ul>
             </nav>
           </div>
-        </div>
-        <div
-          id="dropdown-menu"
-          class="hidden w-full px-10 py-5 bg-white border-t border-t-slate-200 shadow-md"
-        >
-          <ul class="flex flex-col items-center gap-5 lg:flex-row lg:gap-10">
-            <li class="group">
-              <a
-                href="#"
-                class="text-base font-semibold text-secondary hover:text-primary"
-                >Home</a
-              >
-            </li>
-            <li class="group">
-              <a
-                href="#"
-                class="text-base font-semibold text-secondary hover:text-primary"
-                >About</a
-              >
-            </li>
-            <li class="group">
-              <a
-                href="#"
-                class="text-base font-semibold text-secondary hover:text-primary"
-                >Features</a
-              >
-            </li>
-            <li class="group">
-              <a
-                href="#"
-                class="text-base font-semibold text-secondary hover:text-primary"
-                >Contact</a
-              >
-            </li>
-          </ul>
         </div>
       </div>
     </header>
@@ -2129,7 +2140,7 @@
             <form id="registration-form" class="flex flex-col mb-8">
               <div class="mb-5">
                 <h1 class="font-semibold text-2xl text-secondary md:text-4xl">
-                  What are you waiting for? Join the force today!
+                  What are you waiting for? Join us today!
                 </h1>
               </div>
               <div class="email-section mb-6">
@@ -2179,7 +2190,7 @@
               <a
                 href="https://accounts.google.com"
                 target="_blank"
-                class="shadow-md p-4 rounded-md"
+                class="shadow-md p-4 rounded-md hover:bg-slate-100"
               >
                 <svg
                   viewBox="0 0 25 24"
@@ -2223,7 +2234,7 @@
               <a
                 href="https://www.linkedin.com/login"
                 target="_blank"
-                class="shadow-md p-4 rounded-md"
+                class="shadow-md p-4 rounded-md hover:bg-slate-100"
               >
                 <svg
                   width="24"
@@ -2243,7 +2254,7 @@
               <a
                 href="https://github.com/login"
                 target="_blank"
-                class="shadow-md p-4 rounded-md"
+                class="shadow-md p-4 rounded-md hover:bg-slate-100"
               >
                 <svg
                   viewBox="0 0 25 24"
@@ -2275,7 +2286,7 @@
               <a
                 href="https://www.facebook.com/login/"
                 target="_blank"
-                class="shadow-md p-4 rounded-md"
+                class="shadow-md p-4 rounded-md hover:bg-slate-100"
               >
                 <svg
                   viewBox="0 0 25 24"
@@ -2329,17 +2340,17 @@
     <section id="features" class="pt-36 pb-16 bg-slate-100">
       <div class="container">
         <div class="block">
-          <div class="w-full px-10">
+          <div class="max-w-screen-md mx-auto px-10">
             <h4 class="text-lg text-center font-semibold text-primary mb-3">
-              Features
+              About
             </h4>
             <h2 class="text-3xl text-center font-semibold text-secondary mb-3">
-              What Is wellnoted?
+              Why wellnoted?
             </h2>
             <p class="text-base text-center text-tetiary">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
-              sequi?
+              wellnoted isn't just a note-taking app. It's more than that.
             </p>
+            <p>We provide a</p>
           </div>
         </div>
       </div>

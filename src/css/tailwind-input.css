@@ -4,22 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .hamburger div:nth-child(1) {
+    @apply rotate-45 translate-y-1.5;
+  }
+  .hamburger div:nth-child(2) {
+    @apply scale-0;
+  }
+  .hamburger div:nth-child(3) {
+    @apply -rotate-45 -translate-y-1.5;
+  }
+}
+
 .navbar-fixed {
-  @apply fixed z-[99999] bg-white shadow-md;
-}
-
-.hamburger-line {
-  @apply w-[27px] h-[2px] my-2 block bg-secondary;
-}
-
-.hamburger-active > span:nth-child(1) {
-  @apply rotate-45;
-}
-
-.hamburger-active > span:nth-child(2) {
-  @apply scale-0;
-}
-
-.hamburger-active > span:nth-child(3) {
-  @apply -rotate-45;
+  @apply fixed bg-white shadow-md;
 }
