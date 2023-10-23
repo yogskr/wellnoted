@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         primary: "#0d9488",
         secondary: "#334155",
-        tetiary: "#475569",
+        fontcolor: "#475569",
       },
       fontFamily: {
         poppins: ["Poppins"],
