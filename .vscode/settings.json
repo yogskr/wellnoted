@@ -1,0 +1,48 @@
+{
+  "editor.codeActionsOnSave": {},
+  "code-runner.runInTerminal": true,
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE:",
+      "fontWeight": "bold",
+      "color": "black",
+      "border": "1px solid yellow",
+      "borderRadius": "2px",
+      "backgroundColor": "yellow",
+      "overviewRulerColor": "grey"
+    },
+    {
+      "text": "REVIEW:",
+      "fontWeight": "bold",
+      "borderRadius": "2px",
+      "color": "white",
+      "border": "1px solid green",
+      "backgroundColor": "green",
+      "isWholeLine": false
+    },
+    {
+      "text": "TODO:",
+      "color": "black",
+      "fontWeight": "bold",
+      "border": "1px solid orange",
+      "borderRadius": "2px",
+      "backgroundColor": "orange"
+    },
+    {
+      "text": "DEBUG:",
+      "color": "white",
+      "fontWeight": "bold",
+      "border": "1px solid teal",
+      "borderRadius": "2px",
+      "backgroundColor": "teal"
+    },
+    {
+      "text": "WARNING:",
+      "color": "red",
+      "fontWeight": "bold",
+      "border": "1px solid red",
+      "borderRadius": "2px",
+      "backgroundColor": "none"
+    }
+  ]
+}

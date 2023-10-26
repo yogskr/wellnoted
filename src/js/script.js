@@ -1,6 +1,6 @@
 "use strict";
 
-// navbar fixed
+// NOTE: navbar fixed
 const header = document.querySelector("header");
 const fixedNav = header.offsetTop;
 
@@ -12,7 +12,7 @@ window.onscroll = () => {
   }
 };
 
-// scroll up button
+// NOTE: scroll up button
 const scrollBtn = document.querySelector("#scroll-button");
 const bodyElement = document.body;
 const docElement = document.documentElement;
@@ -30,7 +30,7 @@ document.addEventListener("scroll", () => {
   }
 });
 
-// go back to top when the scroll button is clicked
+// NOTE: go back to top when the scroll button is clicked
 scrollBtn.addEventListener("click", () => {
   bodyElement.scrollIntoView();
 });
