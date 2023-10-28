@@ -23,7 +23,3 @@
 .wellnoted-style {
   @apply font-semibold text-primary;
 }
-
-.animate-dropdown {
-  @apply translate-x-96 delay-500 duration-300 ease-in;
-}

@@ -12,7 +12,7 @@ module.exports = {
         fontcolor: "#475569",
       },
       fontFamily: {
-        poppins: ["Poppins"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

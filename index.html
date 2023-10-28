@@ -16,7 +16,7 @@
       <div class="flex justify-between px-10 py-5 lg:px-16">
         <div class="self-center">
           <h2 class="font-bold text-xl text-secondary md:text-2xl">
-            well<span class="font-bold text-white bg-primary p-0.5 rounded-md">noted</span>.
+            well<span class="text-white bg-primary p-0.5 rounded-md">noted</span>.
           </h2>
         </div>
         <div class="flex items-center gap-5">
@@ -34,16 +34,16 @@
           <nav id="nav-menu" class="hidden w-full px-10 md:px-0 lg:flex lg:shadow-none">
             <ul class="flex items-center justify-center gap-9 mr-5">
               <li class="group">
-                <a href="#" class="text-base font-semibold text-secondary hover:text-primary mx-">Home</a>
+                <a href="#home" class="text-base font-semibold text-secondary hover:text-primary mx-">Home</a>
               </li>
               <li class="group">
-                <a href="#" class="text-base font-semibold text-secondary hover:text-primary">Features</a>
+                <a href="#features" class="text-base font-semibold text-secondary hover:text-primary">Features</a>
               </li>
               <li class="group">
-                <a href="#" class="text-base font-semibold text-secondary hover:text-primary">Clients</a>
+                <a href="#" class="text-base font-semibold text-secondary hover:text-primary">Blog</a>
               </li>
               <li class="group">
-                <a href="#" class="text-base font-semibold text-secondary hover:text-primary">Contact</a>
+                <a href="#contact" class="text-base font-semibold text-secondary hover:text-primary">Contact</a>
               </li>
             </ul>
             <div class="group w-[4.5rem] flex items-center justify-center gap-4">
@@ -62,7 +62,7 @@
                 <a href="#" class="text-base font-semibold text-secondary hover:text-primary sm:text-xl">Features</a>
               </li>
               <li class="group">
-                <a href="#" class="text-base font-semibold text-secondary hover:text-primary sm:text-xl">Clients</a>
+                <a href="#" class="text-base font-semibold text-secondary hover:text-primary sm:text-xl">Blog</a>
               </li>
               <li class="group">
                 <a href="#" class="text-base font-semibold text-secondary hover:text-primary sm:text-xl">Contact</a>
@@ -1497,29 +1497,42 @@
   <section id="about" class="pt-12 pb-20">
     <div class="container">
       <div class="block">
-        <div class="px-10 lg:px-16 max-w-full mx-auto">
-          <h4 class="text-lg text-center font-semibold text-primary mb-2">
-            About
+        <div class="px-10 md:px-16 max-w-full mx-auto mb-12">
+          <h4 class="text-lg text-center font-semibold text-primary mb-5">
+            Introducing
           </h4>
-          <h2 class="text-3xl text-center font-semibold text-secondary md:text-4xl spac">
-            What's Wellnoted?
+          <h2 class="text-3xl text-center tracking-wide font-bold text-secondary md:text-4xl spac">
+            well<span class="font-semibold text-white bg-primary p-0.5 rounded-md">noted</span>.
           </h2>
         </div>
       </div>
-      <div class="flex flex-col items-center justify-center px-10 lg:px-16">
-        <figure class="w-24 rounded-full relative top-10 lg:w-32">
-          <img src="./src/images/yoga-about.png" alt="Yoga Krisanta" class="rounded-full shadow-lg bg-white" />
-        </figure>
-        <div class="max-w-2xl w-full h-full border shadow-md rounded-md px-5 pt-16 pb-5">
-          <p class="text-base italic text-fontcolor mb-7 md:text-lg">
-            "<span class="wellnoted-style">wellnoted</span> is more than just a
-            note-taking web app. It helps you become more productive with its to-do app. Oh, it also got a wheater
-            app... How cool is that?"
-          </p>
-          <p class="text-sm text-right text-fontcolor font-semibold md:text-base">Yoga Krisanta | Owner &
-            Developer</p>
-        </div>
+    </div>
+    <div class="flex flex-col items-center justify-center px-10 md:px-16">
+      <article class="max-w-2xl">
+        <p class="text-secondary tracking-wide text-base mb-3">
+          Are you tired of scattered, disorganized notes that make finding important information a daunting task?
+        </p>
+        <p class="text-secondary tracking-wide text-base mb-3">
+          <span class="wellnoted-style">wellnoted</span> is here to revolutionize your note-taking experience.
+        </p>
+        <p class="text-secondary tracking-wide text-base">
+          This dynamic web app is designed to capture, organize, and access your notes seamlessly, ensuring that no
+          brilliant idea or crucial detail ever slips through the cracks.
+        </p>
+      </article>
+      <figure class="w-24 rounded-full relative top-10 lg:w-32">
+        <img src="./src/images/yoga-about.png" alt="Yoga Krisanta" class="rounded-full shadow-lg bg-slate-50" />
+      </figure>
+      <div class="max-w-2xl w-full h-full border shadow-md rounded-md px-5 pt-16 pb-5 bg-slate-50">
+        <p class="text-base italic text-fontcolor mb-7">
+          "<span class="wellnoted-style">wellnoted</span> is more than just a
+          note-taking web app. It helps you become more productive with its to-do app. Oh, it also got a wheater
+          app... How cool is that?"
+        </p>
+        <p class="text-sm text-right text-fontcolor font-semibold">Yoga Krisanta | Owner &
+          Developer</p>
       </div>
+    </div>
     </div>
   </section>
   <!-- About Section End -->
@@ -1532,8 +1545,8 @@
           <h4 class="text-lg text-center font-semibold text-primary mb-2">
             Features
           </h4>
-          <h2 class="text-3xl text-center font-semibold text-secondary mb-5 md:text-4xl spac">
-            Why Use Wellnoted?
+          <h2 class="text-3xl text-center font-semibold text-secondary md:text-4xl spac">
+            Why Choose Us?
           </h2>
         </div>
       </div>
@@ -1603,7 +1616,7 @@
       </div>
       <!-- Features Card End -->
       <!-- Features Large Screen Start -->
-      <div class="hidden lg:block py-20 px-16">
+      <div class="hidden lg:block p-16">
         <div class="w-full items-center h-auto flex justify-evenly mb-16">
           <article class="w-1/2">
             <h3 class="font-semibold text-2xl text-secondary mb-3">

@@ -16,7 +16,7 @@ window.onscroll = () => {
 const scrollBtn = document.querySelector("#scroll-button");
 const bodyElement = document.body;
 const docElement = document.documentElement;
-const showOnPx = 50;
+const showOnPx = 800;
 
 const scrollContainer = () => {
   return docElement || bodyElement;
